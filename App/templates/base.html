@@ -1,0 +1,22 @@
+{% extends 'bootstrap/base.html'%}
+
+<!-- Navbar block  -->
+{% block navbar %}
+    {% include 'navbar.html' %}
+{% endblock %}
+
+    <head>
+        <meta charset="utf-8">
+        {% if title %}
+        <title> {{ title }}</title>
+        {% else %}
+        <title> Builders-app </title>
+        {% endif %}
+    </head>
+    <body>
+        <!-- Content block -->
+
+        {% block content %}
+
+        {% endblock%}
+    </body>
