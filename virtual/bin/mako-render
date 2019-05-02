@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 #!/home/ain/core/BUILDER_CORP/virtual/bin/python
+=======
+#!/home/chris/Documents/Build-corp/virtual/bin/python3
+>>>>>>> origin/development
 # -*- coding: utf-8 -*-
 import re
 import sys
