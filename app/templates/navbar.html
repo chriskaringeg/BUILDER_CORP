@@ -1,5 +1,5 @@
-<div style="background-color: #fff; color: grey;" class="navbar" role="navigation" style="margin-bottom:0; border-bottom: 1px solid"></div>
-    <div class="container-fluid">
+
+    <div class="topnav">
             <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                 <span class="sr-only">Toggle navigation</span>
@@ -15,14 +15,15 @@
 
                     {% if current_user.is_authenticated %}
 
-                    <li class="dropdown"><a style="color: grey;" onmouseover="this.style.borderBottom='thick solid grey'" onmouseout="this.style.borderBottom='none'" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                    <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true>
                         aria-expanded="false">{{current_user.username| capitalize}} <span class="caret"></span></a>
                     </li>
-                    <li><a style="color: grey;" onmouseover="this.style.borderBottom='thick solid grey'" onmouseout="this.style.borderBottom='none'" href="{{url_for('auth.logout')}}">Sign out</a></li>
+                    <li><a href="{{url_for('auth.logout')}}">Sign out</a></li>
                     {% else %}
-                    <li><a style="color: grey;" onmouseover="this.style.borderBottom='thick solid grey'" onmouseout="this.style.borderBottom='none'" href="{{url_for('auth.login')}}">Login</a></li>
+                    <li><a  href="{{url_for('auth.login')}}">Login</a></li>
                 </ul>
                 {% endif %}
+            </div>
             </div>
     </div>
 </div>
